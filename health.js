@@ -3,17 +3,16 @@ app.controller('myCtrl', function($scope) {
     $scope.firstName = "John";
     $scope.lastName = "Doe";
 
+    var recupLinkProduct = document.getElementById("prod");
     $scope.colorGreen = function() {
-        var a = document.getElementById("prod");
-        a.style.fontStyle = "italic";
-        a.style.fontWeight = "bold";
+        recupLinkProduct.style.fontStyle = "italic";
+        recupLinkProduct.style.fontWeight = "bold";
 
 
     }
     $scope.noColor = function() {
-        var a = document.getElementById("prod");
-        a.style.fontStyle = "normal";
-        a.style.fontWeight = "normal";
+        recupLinkProduct.style.fontStyle = "normal";
+        recupLinkProduct.style.fontWeight = "normal";
 
     }
 });
